@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Animation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
+    <img src="https://via.placeholder.com/60" alt="Logo" class="logo">
+    <ul class="menu">
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Vertical Lines -->
+  <div class="vertical-lines-container">
+    <div class="vertical-line"></div>
+    <div class="vertical-line"></div>
+    <div class="vertical-line"></div>
+    <div class="vertical-line"></div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="container d-flex justify-content-center align-items-center" >
+    <div class="content text-center col-md-7">
+      <h1>Your Name</h1>
+      <h2>Your Subtitle</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod interdum nisl, ut fermentum nisi pharetra a. Duis vehicula magna non nisi malesuada, ut suscipit sapien tristique.</p>
+    </div>
+  </div>
+  
+
+  <!-- Skills Section -->
+<section id="skills mx-5" class="skills-section text-center py-5">
+    <div class="container">
+      <h2 class="section-title">My Skills</h2>
+      <div class="line"></div>
+      <div class="row mt-5">
+        <!-- Row 1 -->
+        <div class="col-md-3">
+          <div class="circular-bar" data-percentage="85">
+            <svg class="circular-progress" viewBox="0 0 120 120">
+              <circle class="circle-background" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
+              <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
+            </svg>
+          </div>
+          <p class="skill-name">HTML</p>
+        </div>
+        <div class="col-md-3">
+          <div class="circular-bar" data-percentage="90">
+            <svg class="circular-progress" viewBox="0 0 120 120">
+              <circle class="circle-background" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
+              <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
+            </svg>
+          </div>
+          <p class="skill-name">CSS</p>
+        </div>
+        <div class="col-md-3">
+          <div class="circular-bar" data-percentage="75">
+            <svg class="circular-progress" viewBox="0 0 120 120">
+              <circle class="circle-background" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
+              <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
+            </svg>
+          </div>
+          <p class="skill-name">JavaScript</p>
+        </div>
+        <div class="col-md-3">
+          <div class="circular-bar" data-percentage="80">
+            <svg class="circular-progress" viewBox="0 0 120 120">
+              <circle class="circle-background" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
+              <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
+            </svg>
+          </div>
+          <p class="skill-name">GSAP</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <!-- Row 2 -->
+        <div class="col-md-3">
+            <div class="circular-bar" data-percentage="85">
+              <svg class="circular-progress" viewBox="0 0 120 120">
+                <!-- Background Circle -->
+                <circle class="circle-background" cx="60" cy="60" r="50"></circle>
+                <!-- Progress Circle -->
+                <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
+                <!-- Percentage Text -->
+                <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
+              </svg>
+            </div>
+            <p class="skill-name">HTML</p>
+          </div>
+          
+        <div class="col-md-3">
+          <div class="circular-bar" data-percentage="90">
+            <svg class="circular-progress" viewBox="0 0 120 120">
+              <circle class="circle-background" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
+              <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
+            </svg>
+          </div>
+          <p class="skill-name">CSS</p>
+        </div>
+        <div class="col-md-3">
+          <div class="circular-bar" data-percentage="5">
+            <svg class="circular-progress" viewBox="0 0 120 120">
+              <circle class="circle-background" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
+              <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
+            </svg>
+          </div>
+          <p class="skill-name">JavaScript</p>
+        </div>
+        <div class="col-md-3">
+          <div class="circular-bar" data-percentage="80">
+            <svg class="circular-progress" viewBox="0 0 120 120">
+              <circle class="circle-background" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
+              <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
+            </svg>
+          </div>
+          <p class="skill-name">GSAP</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+<section id="section3 mx-5" class="skills-section">
+    <div class="container">
+      <!-- Heading -->
+      <h2 class="section-heading">My Projects</h2>
+      <div class="underline"></div>
+  
+      <!-- Cards -->
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod interdum nisl, ut fermentum nisi pharetra a.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod interdum nisl, ut fermentum nisi pharetra a.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod interdum nisl, ut fermentum nisi pharetra a.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Experince Section -->
+ <section id="section4 mx-5" class="experience-section">
+    <div class="container">
+      <div class="row">
+        <!-- Col-md-4 for Logo -->
+        <div class="col-md-4 logo-column">
+          <div class="logo-container">
+            <img src="your-logo.png" alt="Your Logo" class="logo">
+          </div>
+        </div>
+  
+        <!-- Col-md-8 for Experience Timeline -->
+        <div class="col-md-8">
+            <h2 class="section-heading">My Projects</h2>
+          <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-item">
+              <div class="timeline-circle">
+                <span>2022</span>
+              </div>
+              <div class="timeline-content">
+                <h4 class="timeline-title">Software Developer</h4>
+                <p class="timeline-description">Developed mobile apps and integrated back-end systems for XYZ Company.</p>
+              </div>
+            </div>
+  
+            <!-- Connector -->
+            <div class="timeline-connector1"></div>
+  
+            <!-- Experience 2 -->
+            <div class="timeline-item">
+              <div class="timeline-circle">
+                <span>2020</span>
+              </div>
+              <div class="timeline-content">
+                <h4 class="timeline-title">Web Developer</h4>
+                <p class="timeline-description">Freelance web development, focusing on responsive websites and UI/UX design.</p>
+              </div>
+            </div>
+  
+            <!-- Connector -->
+            <div class="timeline-connector2"></div>
+  
+            <!-- Experience 3 -->
+            <div class="timeline-item">
+                <div class="timeline-circle">
+                  <span>2020</span>
+                </div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">Web Developer</h4>
+                  <p class="timeline-description">Freelance web development, focusing on responsive websites and UI/UX design.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- portfolio-section-->
+ <section id="portfolio" class="container mt-5">
+    <div class="row">
+        <!-- Image 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="portfolio-item">
+                <img src="image1.jpg" alt="Image 1" class="img-fluid portfolio-image">
+                <div class="overlay">
+                    <div class="text">
+                        <h5>Project 1</h5>
+                        <p>Description of Project 1.</p>
+                    </div>
+                    <a href="#" class="icon-link"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="portfolio-item">
+                <img src="image2.jpg" alt="Image 2" class="img-fluid portfolio-image">
+                <div class="overlay">
+                    <div class="text">
+                        <h5>Project 2</h5>
+                        <p>Description of Project 2.</p>
+                    </div>
+                    <a href="#" class="icon-link"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="portfolio-item">
+                <img src="image3.jpg" alt="Image 3" class="img-fluid portfolio-image">
+                <div class="overlay">
+                    <div class="text">
+                        <h5>Project 3</h5>
+                        <p>Description of Project 3.</p>
+                    </div>
+                    <a href="#" class="icon-link"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 4 to Image 9 ... -->
+          <!-- Image 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="portfolio-item">
+                <img src="image1.jpg" alt="Image 1" class="img-fluid portfolio-image">
+                <div class="overlay">
+                    <div class="text">
+                        <h5>Project 1</h5>
+                        <p>Description of Project 1.</p>
+                    </div>
+                    <a href="#" class="icon-link"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="portfolio-item">
+                <img src="image2.jpg" alt="Image 2" class="img-fluid portfolio-image">
+                <div class="overlay">
+                    <div class="text">
+                        <h5>Project 2</h5>
+                        <p>Description of Project 2.</p>
+                    </div>
+                    <a href="#" class="icon-link"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="portfolio-item">
+                <img src="image3.jpg" alt="Image 3" class="img-fluid portfolio-image">
+                <div class="overlay">
+                    <div class="text">
+                        <h5>Project 3</h5>
+                        <p>Description of Project 3.</p>
+                    </div>
+                    <a href="#" class="icon-link"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- footer -->
+<footer id="footer" class="bg-dark text-white py-5">
+    <div class="container text-center">
+        <!-- Logo -->
+        <img src="logo.png" alt="Logo" class="footer-logo mb-4">
+
+        <!-- Social Icons -->
+        <div class="social-icons mb-4">
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://github.com" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:your-email@example.com" class="social-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <!-- Made with Love -->
+        <div class="made-with-love">
+            <p>Made with <i class="fas fa-heart"></i> by You</p>
+        </div>
+    </div>
+</footer>
+
+
+  
+   
+  
+  
+  
+  
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
