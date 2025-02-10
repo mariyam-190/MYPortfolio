@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar with Animation</title>
+  <title>Mariyam Yasin &mdash; portfolio </title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="css/vendor/icomoon/style.css">
+  <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/vendor/animate.min.css">
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- Navbar -->
-  <nav class="navbar">
-    <ul class="menu">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-    </ul>
-    <img src="https://via.placeholder.com/60" alt="Logo" class="logo">
-    <ul class="menu">
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+  <nav class="unslate_co--site-mobile-menu">
+    <div class="close-wrap d-flex">
+      <a href="#" class="d-flex ml-auto js-menu-toggle">
+        <span class="close-label">Close</span>
+        <div class="close-times">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+        </div>
+      </a>
+    </div>
+    <div class="site-mobile-inner"></div>
   </nav>
+  <nav class="unslate_co--site-nav site-nav-target">
+    <div class="container">
+      <div class="row align-items-center justify-content-between mt-md-5">
+        <div class="col-md-5">
+          <ul class="site-nav-ul unslate_co--site-nav-left  js-clone-nav d-none d-lg-inline-block">
+            <li> <a href="#home-section" class="nav-link ">Home</a> </li>
+            <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
+            <li><a href="#skills-section" class="nav-link">Skills</a></li>
+          </ul>
+        </div>
+        <div class="site-logo pos-absolute mt-5 mt-md-1">
+          <a href="index.html" class="unslate_co--site-logo"> <img class=" mt-5 pt-3" style="width:120px; height: 140px;"
+              src="img/تصميمي ابيض.png"></a>
+        </div>
+        <div class="col-md-5 text-right text-lg-left">
+          <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+            <li><a href="#Services-section" class="nav-link">Services</a></li>
+            <li><a href="#Experience-section" class="nav-link">Experience</a></li>
+            <li><a href="#Contact-section" class="nav-link">Contact</a></li>
+          </ul>
 
+          <!-- <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+            <li><a href="#" class="js-menu-toggle"> Menu </a></li>
+          </ul> -->
+
+        </div>
+      </div>
+    </div>
+
+  </nav>
   <!-- Vertical Lines -->
   <div class="vertical-lines-container">
     <div class="vertical-line"></div>
@@ -31,24 +70,179 @@
     <div class="vertical-line"></div>
   </div>
 
-  <!-- Content Section -->
-  <div class="container d-flex justify-content-center align-items-center" >
-    <div class="content text-center col-md-7">
-      <h1>Your Name</h1>
-      <h2>Your Subtitle</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod interdum nisl, ut fermentum nisi pharetra a. Duis vehicula magna non nisi malesuada, ut suscipit sapien tristique.</p>
+  <!-- Hero Section -->
+  <div id="home-section" class="container d-flex justify-content-center align-items-center">
+
+    <div class="content col-md-7 text-center">
+      <h1 class="heading gsap-reveal-hero h1">MARIYAM YASIN</h1>
+      <h2 class="subheading gsap-reveal-hero mt-md-4">I’m a Full-Stack Developer
+      </h2>
+      <p>A highly knowledgeable, industrious, and resilient software developer with a strong passion for programming. Skilled in web and iOS app development, with a proven ability to self-learn and adapt to new technologies efficiently. Enthusiastic about artificial intelligence and continuously expanding expertise in the field. Enjoys networking and collaborating with others to explore and discover new innovations.
+
+      </p>
     </div>
   </div>
-  
-
-  <!-- Skills Section -->
-<section id="skills mx-5" class="skills-section text-center py-5">
+  <!-- Portfolio Section -->
+  <div class="unslate_co--section" id="portfolio-section">
     <div class="container">
-      <h2 class="section-title">My Skills</h2>
-      <div class="line"></div>
+      <div class="relative">
+        <div class="loader-portfolio-wrap">
+          <div class="loader-portfolio"></div>
+        </div>
+      </div>
+      <div id="portfolio-single-holder"></div>
+
+      <div class="portfolio-wrapper">
+
+        <div class="d-flex align-items-center mb-4 gsap-reveal gsap-reveal-filter">
+          <h2 class="mr-auto  section-title"><span class="gsap-reveal">Portfolio</span></h2>
+        </div>
+        <div id="posts" class="row gutter-isotope-item">
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="#"
+              class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="2">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Anoli</h3>
+                  <p>Unity, Platform : Ipad, Iphone</p>
+                </div>
+              </div>
+              <img src="img/anoli.png" class="lazyload  img-fluid" alt="img" />
+            </a>
+          </div>
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="#"
+              class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="2">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Yusra يسرى</h3>
+                  <p> swiftui, CoreLocation, UserNotification</p>
+                </div>
+              </div>
+              <img src="img/Yusra.png" class="lazyload  img-fluid" alt="img" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="#"
+              class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="2">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Betreqo</h3>
+                  <p>Platform: Ipad, SwiftUi</p>
+                </div>
+              </div>
+              <img src="img/betreqoo-2.png" class="lazyload  img-fluid" alt="img" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="#"
+              class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="2">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Blue Website</h3>
+                  <p> Html ,CSS,Javascript, Jquery, GSAP</p>
+                </div>
+              </div>
+              <img src="img/bluewesite.png" class="lazyload  img-fluid" alt="img" />
+            </a>
+
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="#"
+              class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="2">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Plant Green Web</h3>
+                  <p>
+                    Html , Css , Bootstrap , JavaScript , Jquery</p>
+                </div>
+              </div>
+              <img src="img/green.png" class="lazyload  img-fluid" alt="img" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="#"
+              class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="2">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>E-Store</h3>
+                  <p>
+                    Laravel8/php</p>
+                </div>
+              </div>
+              <img src="img/estore.PNG" class="lazyload  img-fluid" alt="img" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="#"
+              class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="2">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>MY Blog</h3>
+                  <p>
+                    Html , Css , Tailwind,
+                    Laravel8/php</p>
+                </div>
+              </div>
+              <img src="img/blog.PNG" class="lazyload  img-fluid" alt="img" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="#"
+              class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="2">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>Hospital</h3>
+                  <p>Laravel8/php</p>
+                </div>
+              </div>
+              <img src="img/Hospital.PNG" class="lazyload  img-fluid" alt="img" />
+            </a>
+          </div>
+
+          <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+            <a href="#"
+              class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="2">
+              <div class="overlay">
+                <span class="wrap-icon icon-link2"></span>
+                <div class="portfolio-item-content">
+                  <h3>T-Center</h3>
+                  <p> Laravel8/php , sql</p>
+                </div>
+              </div>
+              <img src="img/mawhu.PNG" class="lazyload  img-fluid" alt="img" />
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+  <!-- Skills Section -->
+  <section id="skills-section" class="skills-section text-center py-5 mx-5">
+    <div class="container">
+      <h2 class="section-heading">My Skills</h2>
+      <!-- <div class="line"></div> -->
       <div class="row mt-5">
         <!-- Row 1 -->
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="circular-bar" data-percentage="85">
             <svg class="circular-progress" viewBox="0 0 120 120">
               <circle class="circle-background" cx="60" cy="60" r="50"></circle>
@@ -58,7 +252,7 @@
           </div>
           <p class="skill-name">HTML</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="circular-bar" data-percentage="90">
             <svg class="circular-progress" viewBox="0 0 120 120">
               <circle class="circle-background" cx="60" cy="60" r="50"></circle>
@@ -68,7 +262,54 @@
           </div>
           <p class="skill-name">CSS</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
+          <div class="circular-bar" data-percentage="85">
+            <svg class="circular-progress" viewBox="0 0 120 120">
+              <circle class="circle-background" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
+              <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
+            </svg>
+          </div>
+          <p class="skill-name">Bootstrap/SAAS</p>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="circular-bar" data-percentage="70">
+            <svg class="circular-progress" viewBox="0 0 120 120">
+              <circle class="circle-background" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
+              <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
+            </svg>
+          </div>
+          <p class="skill-name">IOS App</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <!-- Row 2 -->
+        <div class="col-md-3 col-6">
+          <div class="circular-bar" data-percentage="85">
+            <svg class="circular-progress" viewBox="0 0 120 120">
+              <!-- Background Circle -->
+              <circle class="circle-background" cx="60" cy="60" r="50"></circle>
+              <!-- Progress Circle -->
+              <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
+              <!-- Percentage Text -->
+              <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
+            </svg>
+          </div>
+          <p class="skill-name">JavaScript/Vue.js</p>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="circular-bar" data-percentage="70">
+            <svg class="circular-progress" viewBox="0 0 120 120">
+              <circle class="circle-background" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
+              <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
+            </svg>
+          </div>
+          <p class="skill-name">SQL</p>
+        </div>
+        <div class="col-md-3 col-6">
           <div class="circular-bar" data-percentage="75">
             <svg class="circular-progress" viewBox="0 0 120 120">
               <circle class="circle-background" cx="60" cy="60" r="50"></circle>
@@ -76,9 +317,9 @@
               <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
             </svg>
           </div>
-          <p class="skill-name">JavaScript</p>
+          <p class="skill-name">Laravel</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="circular-bar" data-percentage="80">
             <svg class="circular-progress" viewBox="0 0 120 120">
               <circle class="circle-background" cx="60" cy="60" r="50"></circle>
@@ -86,292 +327,192 @@
               <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
             </svg>
           </div>
-          <p class="skill-name">GSAP</p>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <!-- Row 2 -->
-        <div class="col-md-3">
-            <div class="circular-bar" data-percentage="85">
-              <svg class="circular-progress" viewBox="0 0 120 120">
-                <!-- Background Circle -->
-                <circle class="circle-background" cx="60" cy="60" r="50"></circle>
-                <!-- Progress Circle -->
-                <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
-                <!-- Percentage Text -->
-                <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
-              </svg>
-            </div>
-            <p class="skill-name">HTML</p>
-          </div>
-          
-        <div class="col-md-3">
-          <div class="circular-bar" data-percentage="90">
-            <svg class="circular-progress" viewBox="0 0 120 120">
-              <circle class="circle-background" cx="60" cy="60" r="50"></circle>
-              <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
-              <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
-            </svg>
-          </div>
-          <p class="skill-name">CSS</p>
-        </div>
-        <div class="col-md-3">
-          <div class="circular-bar" data-percentage="5">
-            <svg class="circular-progress" viewBox="0 0 120 120">
-              <circle class="circle-background" cx="60" cy="60" r="50"></circle>
-              <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
-              <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
-            </svg>
-          </div>
-          <p class="skill-name">JavaScript</p>
-        </div>
-        <div class="col-md-3">
-          <div class="circular-bar" data-percentage="80">
-            <svg class="circular-progress" viewBox="0 0 120 120">
-              <circle class="circle-background" cx="60" cy="60" r="50"></circle>
-              <circle class="circle-progress" cx="60" cy="60" r="50"></circle>
-              <text class="percentage" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle">0%</text>
-            </svg>
-          </div>
-          <p class="skill-name">GSAP</p>
+          <p class="skill-name">Python</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Section 3 -->
-<section id="section3 mx-5" class="skills-section">
+  <!-- Services Section -->
+  <section id="Services-section" class="skills-section my-5">
     <div class="container">
-      <!-- Heading -->
-      <h2 class="section-heading">My Projects</h2>
-      <div class="underline"></div>
-  
+      <h2 class="section-heading">My Services</h2>
       <!-- Cards -->
       <div class="row">
         <!-- Card 1 -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 1">
+        <div class="col-md-4 col-12 mb-5">
+          <div class="text-center p-4 h-100">
+            <div class="d-flex justify-content-center align-items-center m-5" style="height: 80px;">
+              <i class="fa-solid fa-sliders fa-2x"></i>
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Project 1</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod interdum nisl, ut fermentum nisi pharetra a.</p>
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod interdum nisl, ut
+                fermentum nisi pharetra a.
+              </p>
             </div>
           </div>
         </div>
-  
+
         <!-- Card 2 -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 2">
+        <div class="col-md-4 col-12 mb-5">
+          <div class="text-center p-4 h-100">
+            <div class="d-flex justify-content-center align-items-center m-5" style="height: 80px;">
+              <i class="fa-solid fa-mobile fa-2x"></i>
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Project 2</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod interdum nisl, ut fermentum nisi pharetra a.</p>
+              <h5 class="card-title">iOS App Development</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod interdum nisl, ut
+                fermentum nisi pharetra a.
+              </p>
             </div>
           </div>
         </div>
-  
+
         <!-- Card 3 -->
-        <div class="col-md-4">
-          <div class="card">
-            <img src="https://via.placeholder.com/300" class="card-img-top" alt="Project 3">
+        <div class="col-md-4 col-12 mb-5">
+          <div class="text-center p-4 h-100">
+            <div class="d-flex justify-content-center align-items-center m-5" style="height: 80px;">
+              <i class="fa-solid fa-robot fa-2x"></i>
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Project 3</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod interdum nisl, ut fermentum nisi pharetra a.</p>
+              <h5 class="card-title">Artificial Intelligence</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod interdum nisl, ut
+                fermentum nisi pharetra a.
+              </p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
-
- <!-- Experince Section -->
- <section id="section4 mx-5" class="experience-section">
+  <!-- Experince Section -->
+  <section id="experience-section" class="experience-section my-5">
     <div class="container">
-      <div class="row">
-        <!-- Col-md-4 for Logo -->
-        <div class="col-md-4 logo-column">
-          <div class="logo-container">
-            <img src="your-logo.png" alt="Your Logo" class="logo">
-          </div>
-        </div>
-  
-        <!-- Col-md-8 for Experience Timeline -->
-        <div class="col-md-8">
-            <h2 class="section-heading">My Projects</h2>
-          <div class="timeline">
+        <h2 class="section-title mb-5 text-center">My Experiences</h2>
+        <div class="timeline">
+            
             <!-- Experience 1 -->
             <div class="timeline-item">
-              <div class="timeline-circle">
-                <span>2022</span>
-              </div>
-              <div class="timeline-content">
-                <h4 class="timeline-title">Software Developer</h4>
-                <p class="timeline-description">Developed mobile apps and integrated back-end systems for XYZ Company.</p>
-              </div>
+                <div class="timeline-circle">
+                    <span>2024</span>
+                </div>
+                <div class="timeline-content col-10">
+                    <h4 class="timeline-title">Apple Developer - Second Year</h4>
+                    <p class="timeline-description">Project 1: Firebase Integration with Gemini API.</p>
+                    <p class="timeline-description">Project 2: Arabic Podcast Classification Using Python, scikit-learn, pandas, NLP, TF-IDF.</p>
+                </div>
             </div>
-  
-            <!-- Connector -->
             <div class="timeline-connector1"></div>
-  
             <!-- Experience 2 -->
             <div class="timeline-item">
-              <div class="timeline-circle">
-                <span>2020</span>
-              </div>
-              <div class="timeline-content">
-                <h4 class="timeline-title">Web Developer</h4>
-                <p class="timeline-description">Freelance web development, focusing on responsive websites and UI/UX design.</p>
-              </div>
+                <div class="timeline-circle">
+                    <span>2023</span>
+                </div>
+                <div class="timeline-content col-10">
+                    <h4 class="timeline-title">Apple Developer Academy - First Year</h4>
+                    <p class="timeline-description">Specialized in iOS app development with Swift, focusing on SwiftUI, ARKit, CoreML, and CreateML.</p>
+                    <p class="timeline-description">Developed almost 9 innovative apps leveraging Apple’s latest frameworks and technologies.                </p>
+                    <p class="timeline-description">Collaborated in teams to deliver high-quality, user-centric mobile solutions.                  .</p>
+                </div>
             </div>
-  
-            <!-- Connector -->
-            <div class="timeline-connector2"></div>
-  
+            <!-- <div class="timeline-connector2"></div> -->
             <!-- Experience 3 -->
             <div class="timeline-item">
                 <div class="timeline-circle">
-                  <span>2020</span>
+                    <span>2021</span>
                 </div>
-                <div class="timeline-content">
-                  <h4 class="timeline-title">Web Developer</h4>
-                  <p class="timeline-description">Freelance web development, focusing on responsive websites and UI/UX design.</p>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
- <!-- portfolio-section-->
- <section id="portfolio" class="container mt-5">
-    <div class="row">
-        <!-- Image 1 -->
-        <div class="col-md-4 mb-4">
-            <div class="portfolio-item">
-                <img src="image1.jpg" alt="Image 1" class="img-fluid portfolio-image">
-                <div class="overlay">
-                    <div class="text">
-                        <h5>Project 1</h5>
-                        <p>Description of Project 1.</p>
-                    </div>
-                    <a href="#" class="icon-link"><i class="fas fa-link"></i></a>
+                <div class="timeline-content col-10">
+                    <h4 class="timeline-title">Internship in SAID IT Company</h4>
+                    <p class="timeline-description">Worked on Full-Stack Web Development, gaining experience with front-end and back-end technologies. </p>
+                <p class="timeline-description">Developed and deployed applications using Docker for containerization, ensuring scalable and efficient deployment. </p>
+                  <p class="timeline-description">eContributed to a Flutter front-end project, collaborating with the team to enhance user interfaces for mobile apps
+                    .</p>
                 </div>
             </div>
-        </div>
-
-        <!-- Image 2 -->
-        <div class="col-md-4 mb-4">
-            <div class="portfolio-item">
-                <img src="image2.jpg" alt="Image 2" class="img-fluid portfolio-image">
-                <div class="overlay">
-                    <div class="text">
-                        <h5>Project 2</h5>
-                        <p>Description of Project 2.</p>
-                    </div>
-                    <a href="#" class="icon-link"><i class="fas fa-link"></i></a>
+            <!-- <div class="timeline-connector3"></div> -->
+            <!-- Experience 4 -->
+            <div class="timeline-item">
+                <div class="timeline-circle">
+                    <span>2020</span>
+                </div>
+                <div class="timeline-content col-10">
+                  <h4 class="timeline-title">Taiba Valley Accelerator </h4>
+                    <p class="timeline-description">Participated in the accelerator program, developing an E-Learning Platform using Full-Stack Web Development  with Laravel.
+                    </p>
+                    <p class="timeline-description">Participated in the accelerator program, developing an E-Learning Platform using Full-Stack Web Development  with Laravel.
+                    </p>
                 </div>
             </div>
-        </div>
-
-        <!-- Image 3 -->
-        <div class="col-md-4 mb-4">
-            <div class="portfolio-item">
-                <img src="image3.jpg" alt="Image 3" class="img-fluid portfolio-image">
-                <div class="overlay">
-                    <div class="text">
-                        <h5>Project 3</h5>
-                        <p>Description of Project 3.</p>
-                    </div>
-                    <a href="#" class="icon-link"><i class="fas fa-link"></i></a>
+            <!-- <div class="timeline-connector4"></div> -->
+            <!-- Experience 5 -->
+            <div class="timeline-item">
+                <div class="timeline-circle">
+                    <span>2020</span>
+                </div>
+                <div class="timeline-content col-10">
+                  <h4 class="timeline-title">Volunteer – Voluntary National Association (FAZZAH)</h4>
+                    <p class="timeline-description">Established and led a team to teach programming, empowering others with coding skills.</p>
                 </div>
             </div>
-        </div>
 
-        <!-- Image 4 to Image 9 ... -->
-          <!-- Image 1 -->
-          <div class="col-md-4 mb-4">
-            <div class="portfolio-item">
-                <img src="image1.jpg" alt="Image 1" class="img-fluid portfolio-image">
-                <div class="overlay">
-                    <div class="text">
-                        <h5>Project 1</h5>
-                        <p>Description of Project 1.</p>
-                    </div>
-                    <a href="#" class="icon-link"><i class="fas fa-link"></i></a>
-                </div>
-            </div>
         </div>
-
-        <!-- Image 2 -->
-        <div class="col-md-4 mb-4">
-            <div class="portfolio-item">
-                <img src="image2.jpg" alt="Image 2" class="img-fluid portfolio-image">
-                <div class="overlay">
-                    <div class="text">
-                        <h5>Project 2</h5>
-                        <p>Description of Project 2.</p>
-                    </div>
-                    <a href="#" class="icon-link"><i class="fas fa-link"></i></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Image 3 -->
-        <div class="col-md-4 mb-4">
-            <div class="portfolio-item">
-                <img src="image3.jpg" alt="Image 3" class="img-fluid portfolio-image">
-                <div class="overlay">
-                    <div class="text">
-                        <h5>Project 3</h5>
-                        <p>Description of Project 3.</p>
-                    </div>
-                    <a href="#" class="icon-link"><i class="fas fa-link"></i></a>
-                </div>
-            </div>
-        </div>
-
     </div>
 </section>
-
-<!-- footer -->
-<footer id="footer" class="bg-dark text-white py-5">
+  <!-- footer -->
+  <footer id="Contact-section" class="text-white my-5">
     <div class="container text-center">
-        <!-- Logo -->
-        <img src="logo.png" alt="Logo" class="footer-logo mb-4">
+      <!-- Logo -->
+      <img src="img/تصميمي ابيض.png" alt="Logo" class="footer-logo mb-4">
 
-        <!-- Social Icons -->
-        <div class="social-icons mb-4">
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank" class="social-icon">
-                <i class="fab fa-x-twitter"></i>
-            </a>
-            <a href="https://github.com" target="_blank" class="social-icon">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="mailto:your-email@example.com" class="social-icon">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </div>
+      <!-- Social Icons -->
+      <div class="social-icons mb-4">
+        <a href="https://www.linkedin.com/in/mariyam-yasin/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://x.com/mariyamprogram1" target="_blank" class="social-icon">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://github.com/mariyam-190" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="ymariyam90@gmail.com" class="social-icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
 
-        <!-- Made with Love -->
-        <div class="made-with-love">
-            <p>Made with <i class="fas fa-heart"></i> by You</p>
-        </div>
+      <!-- Made with Love -->
+      <div class="made-with-love mt-md-5">
+        <p>Made with <i class="fas fa-heart"></i> by MY</p>
+      </div>
     </div>
-</footer>
-
-
-  
-   
-  
-  
-  
-  
-  
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="jss/scripts-dist.js"></script>
+  <script src="js/main.js"></script>
   <script src="script.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    
+    gsap.utils.toArray(".timeline-item").forEach((item, index) => {
+        gsap.from(item, {
+            opacity: 0,
+            y: 50,
+            scale: 0.8,
+            duration: 0.8,
+            scrollTrigger: {
+                trigger: item,
+                start: "top 80%",
+                toggleActions: "play none none none"
+            }
+        });
+    });
+</script>
 </body>
+
 </html>
