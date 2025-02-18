@@ -110,11 +110,9 @@ unslate_co--site-nav {
   float: right;
 }
 
-.unslate_co--site-nav .unslate_co--site-logo {
-  font-size: 1.7rem;
-  color: #fff;
-  font-weight: 700;
-
+.logo-img{
+  width:120px; 
+  height: 140px;
 }
 
 .unslate_co--site-nav .unslate_co--site-logo span {
@@ -877,14 +875,8 @@ unslate_co--site-nav {
   font-size: 1.5rem;
   font-weight: bold;
   fill: #cccc;
-  text-anchor: middle;
-  /* Horizontally center the text */
-  alignment-baseline: central;
-  /* Vertically center the text */
-  dominant-baseline: middle;
-  /* Align text vertically in the middle */
+  
   rotate: 90deg;
-  transform-origin: center;
 }
 
 .skill-name {
@@ -957,6 +949,13 @@ unslate_co--site-nav {
   .card img {
     height: 150px;
   }
+  .logo-img{
+    width:150px; 
+    height: 190px;
+    margin-top: 90px!important;
+    margin-bottom: -50px;
+  }
+  
 }
 
 /* Section 4: Experience Styles */
@@ -1178,11 +1177,16 @@ unslate_co--site-nav {
 
 .portfolio-item .wrap-icon {
   position: absolute;
-  right: 20px;
-  color: #fff;
-  top: 20px;
+    right: 20px;
+    color: red;
+    top: -280px;
+    z-index: 100 !important;
 }
-
+.link-icon {
+      float: right;
+      margin: 20px;
+      color: rgba(0,0,0,1);
+}
 .portfolio-item .portfolio-item-content,
 .blog-item .portfolio-item-content {
   position: absolute;
