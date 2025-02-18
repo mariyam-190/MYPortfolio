@@ -949,7 +949,10 @@ unslate_co--site-nav {
   .card img {
     height: 150px;
   }
-  
+  .content h1 {
+    font-size: 4.5rem;
+
+}
   
 }
 
