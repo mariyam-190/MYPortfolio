@@ -1051,8 +1051,8 @@ unslate_co--site-nav {
   }
 
   .timeline-connector1 {
-      left: 49px;
-      height: 1188px;
+      left: 45px;
+      height: 1195px;
   }
 }
 
@@ -1078,16 +1078,10 @@ unslate_co--site-nav {
   .timeline-description {
     font-size: 0.8rem;
   }
-
-  /* .timeline-connector1,
-  .timeline-connector2,
-  .timeline-connector3,
-  .timeline-connector4,
-  .timeline-connector5,
-  .timeline-connector6 {
-    left: 25px;
-    height: 60px; */
-  /* } */
+  .footer-logo {
+    width: 150px;
+    height: 190px;
+  }
   .logo-img{
     width:150px; 
     height: 190px;
@@ -1482,11 +1476,8 @@ unslate_co--site-nav {
   position: relative;
   color: #cccc;
   top: 150px;
-  /* Initially position it below the previous section */
   opacity: 0;
-  /* Initially, footer is hidden */
   z-index: -1;
-  /* Footer behind previous section */
   transition: all 0.5s ease-in-out;
 }
 
