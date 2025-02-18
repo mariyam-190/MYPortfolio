@@ -87,7 +87,7 @@ unslate_co--site-nav {
 
 .unslate_co--site-nav .site-logo.pos-absolute {
   position: absolute;
-  left: 50% !important;
+  left: 50%!important;
   width: 120px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -949,12 +949,7 @@ unslate_co--site-nav {
   .card img {
     height: 150px;
   }
-  .logo-img{
-    width:150px; 
-    height: 190px;
-    margin-top: 90px!important;
-    margin-bottom: -50px;
-  }
+  
   
 }
 
@@ -1108,14 +1103,24 @@ unslate_co--site-nav {
     font-size: 0.8rem;
   }
 
-  .timeline-connector1,
+  /* .timeline-connector1,
   .timeline-connector2,
   .timeline-connector3,
   .timeline-connector4,
   .timeline-connector5,
   .timeline-connector6 {
     left: 25px;
-    height: 60px;
+    height: 60px; */
+  /* } */
+  .logo-img{
+    width:150px; 
+    height: 190px;
+    margin-top: 90px!important;
+    margin-bottom: -50px;
+  }
+  .unslate_co--site-nav .site-logo.pos-absolute {
+   
+    left: 44%!important;
   }
 }
 
